@@ -1,0 +1,142 @@
+<!--
+	TO-DO:
+		GET OFFICIAL LOGOS
+		FILL NEWS SLIDESHOW WITH CONTENT
+		BETTERIZE THE BLOG PAGE?
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BC Robotics</title>
+		<link rel="icon" type="image/png" href="Images/4504Logos/BCRoboticsText.png">
+    <link href="desktop.css" media="screen and (min-width: 900px)" rel="stylesheet" type="text/css" />
+		<link href="mobile.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body">
+		<div id="topbar">
+
+			<img id="hamburgerMenuIcon1" src="Images/icons/hamburgerMenuIcon.png" alt="hello">
+		</div>
+		<!-- navigation bar code start -->
+		<div id="navbar">
+			<img id="mammothLogo" src="Images/4504Logos/MammothLogo.png" alt="logo">
+			<img id="hamburgerMenuIcon" src="Images/icons/hamburgerMenuIcon.png">
+		</div>
+		<!-- navigation bar end -->
+		<div id="hamburgerMenuContainer">
+			<div id="hamburgerMenu">
+				<ul id="hamburgerMenuList">
+					<li class="hamMenuItem"><a href="#news" class="hamburgerMenuLink">News</a></li>
+					<li class="hamMenuItem"><a href="#sponsors" class="hamburgerMenuLink">Sponsors</a></li>
+					<li class="hamMenuItem"><a href="https://www.thebluealliance.com/" class="hamburgerMenuLink" target="_Blank">Schedule</a></li>
+					<li class="hamMenuItem"><a href="#contact" class="hamburgerMenuLink">Contact</a></li>
+					<li id="joinUsHamburger" class="hamMenuItem"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link" target="_blank" class="hamburgerMenuLink">Join Us</a></li>
+					<li id="blogburg" class="hamMenuItem"><a href="Pages/blogPost/blog.html" class="hamburgerMenuLink">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="header">
+			<div id="hContent">
+				<img src="Images/4504Logos/MammothLogo.png" alt="logo" id="pageLogo">
+				<div id="slogan">
+					<h1 id="teamName">BC Robotics</h1>
+					<h2 id="teamNumber">Team 4504</h2>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link" target="_blank"><button id="joinUsSplash" class="rounded">Join 	Us</button></a>
+				</div>
+			</div>
+      <!-- <img src="Images/icons/chevronDownWhite.png" alt="downarrow" id="arrowdown"> -->
+		</div>
+		<div id="body">
+			<div id="newsDiv" class="section">
+				<div id="news">
+				<div id="buttonContainer">
+					<h1 class="sectionTitles" id="newsTitle">News</h1>
+					<div id="newsContainer">
+						<button onclick="window.open('Files/cal.pdf','_blank')" type="button" id="caldown" class="newsButtons rounded">Download The Event Calender!</button>
+						<button onclick="location.href='Pages/blogPost/blog.html'" type="button" id="blog" class="newsButtons rounded">Read the build blog!</button>
+					</div>
+				</div>
+				<div id="slides-container">
+					<div id="ssCounter" class="rounded">	- / - </div>
+					<div class="newsText">
+						<h3 id="ssTitle">Title Loading...</h3>
+						<h6 id="ssText">Text Loading...</h6>
+					</div>
+					<div id="dotContainer" style="text-align:center">
+						<span class="dot" onclick="showSlide(1)"></span> 
+						<span class="dot" onclick="showSlide(2)"></span>
+						<span class="dot" onclick="showSlide(3)"></span>
+					</div>
+				</div>
+				</div>
+			</div>
+
+      <div id="externalNews">
+				<div id="rssFeed">
+        <h1 class="sectionTitles">Other Robotics News!</h1>
+          <script src="//rss.bloople.net/?url=https%3A%2F%2Frobohub.org%2Ffeed%2F&detail=100&limit=5&type=js"></script>
+				</div>
+      </div> 
+
+			<div id="sponsors">
+        <div id="sponsorInfo" class="rounded">
+					<h1 class="sectionTitles">Thank you to our 2020 sponsors!</h1>
+        </div>
+				<div id="ranks">
+					<div class="sponsor rounded">
+						<img src="Images/sponsors/FIRSTLogo.png" alt="First" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="Images/sponsors/arconicLogo.png" alt="Arconic" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/densoLogo.png" alt="Denso" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/alcoa.png" alt="Alcoa City Schools" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/Battelle.png" alt="Battelle" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/MCS.png" alt="Maryville City Schools" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/northrop.png" alt="northrop" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/oak ridge.png" alt="oak ridge national labs" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/tsin.jpg" alt="TSIN" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/TVA.png" alt="TVA" class="sponsorImg">
+					</div>
+					<div class="sponsor rounded">
+						<img src="/Images/sponsors/wbGov.png" alt="William Blount High School" class="sponsorImg">
+					</div>
+				</div>
+			</div>
+			<div id="contact">
+				<div id="contactContent">
+					<h1 class="sectionTitles"> Contact Us</h1>
+					<div id="socialLinks">
+        	  <br>
+						<div id="contactContainer">
+							<!-- https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link -->
+							<button onclick=" window.open('https://www.chiefdelphi.com/','_blank')" 	type="button" id="discussion" class="contactButtons rounded">Join the 	discussion</button>
+							<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link','_blank')" 	type="button" id="discussion" class="contactButtons rounded">Do you want to join the club?</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div id="footer">
+ 		 <h6 class="footerText">BC Robotics © 2021 All Rights Reserved.</h6>
+		</div>
+		<script src="script.js"></script>
+  </body>
+</html>

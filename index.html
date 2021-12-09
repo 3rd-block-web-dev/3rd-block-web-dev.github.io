@@ -1,42 +1,48 @@
 <!--
-	TO-DO:
-		GET OFFICIAL LOGOS
-		FILL NEWS SLIDESHOW WITH CONTENT
-		BETTERIZE THE BLOG PAGE?
--->
+#		    _/  _/    _/_/_/_/    _/    _/  _/   
+#		   _/  _/    _/        _/  _/  _/  _/    
+#		  _/_/_/_/  _/_/_/    _/  _/  _/_/_/_/   
+#		     _/          _/  _/  _/      _/      
+#		    _/    _/_/_/      _/        _/  
+ -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>BC Robotics</title>
-		<link rel="icon" type="image/png" href="Images/4504Logos/BCRoboticsText.png">
+		<link rel="icon" type="image/png" href="Images/4504Logos/LogoStackNoMammoth.png">
     <link href="desktop.css" media="screen and (min-width: 900px)" rel="stylesheet" type="text/css" />
 		<link href="mobile.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css" />
   </head>
-  <body id="body">
-		<div id="topbar">
 
+
+
+  <body id="body">
+		<!-- TOPBAR ########################################-->
+		<div id="topbar">
 			<img id="hamburgerMenuIcon1" src="Images/icons/hamburgerMenuIcon.png" alt="hello">
 		</div>
-		<!-- navigation bar code start -->
+		<!-- NAVBAR ########################################-->
 		<div id="navbar">
-			<img id="mammothLogo" src="Images/4504Logos/MammothLogo.png" alt="logo">
+			<img id="mammothLogo" src="Images/4504Logos/MammothLogoWhite.png" alt="logo">
 			<img id="hamburgerMenuIcon" src="Images/icons/hamburgerMenuIcon.png">
 		</div>
-		<!-- navigation bar end -->
+		<!-- HAMBURGER MENU ########################################-->
 		<div id="hamburgerMenuContainer">
 			<div id="hamburgerMenu">
-				<ul id="hamburgerMenuList">
-					<li class="hamMenuItem"><a href="#news" class="hamburgerMenuLink">News</a></li>
-					<li class="hamMenuItem"><a href="#sponsors" class="hamburgerMenuLink">Sponsors</a></li>
-					<li class="hamMenuItem"><a href="https://www.thebluealliance.com/" class="hamburgerMenuLink" target="_Blank">Schedule</a></li>
-					<li class="hamMenuItem"><a href="#contact" class="hamburgerMenuLink">Contact</a></li>
-					<li id="joinUsHamburger" class="hamMenuItem"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link" target="_blank" class="hamburgerMenuLink">Join Us</a></li>
-					<li id="blogburg" class="hamMenuItem"><a href="Pages/blogPost/blog.html" class="hamburgerMenuLink">Blog</a></li>
-				</ul>
+				<a href="#news" class="hamburgerMenuLink">News</a>
+				<a href="#sponsors" class="hamburgerMenuLink">Sponsors</a>
+				<a href="https://www.thebluealliance.com/" class="hamburgerMenuLink" target="_Blank">Schedule</a>
+				<a href="#contact" class="hamburgerMenuLink">Contact</a></li>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link" target="_blank" id="joinUsHamburger" class="hamburgerMenuLink">Join Us</a>
+				<a id="blogburg" class="hamburgerMenuLink">Blog (Coming soon)</a>
+				<!-- When build block is released, add href="Pages/blogPost/blog.html" to the line above and remove disabled class -->
 			</div>
 		</div>
+
+		<!-- HEADER ########################################-->
 		<div id="header">
 			<div id="hContent">
 				<img src="Images/4504Logos/MammothLogo.png" alt="logo" id="pageLogo">
@@ -48,14 +54,18 @@
 			</div>
       <!-- <img src="Images/icons/chevronDownWhite.png" alt="downarrow" id="arrowdown"> -->
 		</div>
+
 		<div id="body">
+			<!-- NEWS ########################################-->
 			<div id="newsDiv" class="section">
 				<div id="news">
 				<div id="buttonContainer">
 					<h1 class="sectionTitles" id="newsTitle">News</h1>
 					<div id="newsContainer">
-						<button onclick="window.open('Files/cal.pdf','_blank')" type="button" id="caldown" class="newsButtons rounded">Download The Event Calender!</button>
-						<button onclick="location.href='Pages/blogPost/blog.html'" type="button" id="blog" class="newsButtons rounded">Read the build blog!</button>
+						<button type="button" id="caldown" class="newsButtons rounded disabled">View the event calender! (Coming soon)</button>
+						<!-- When event calander is released, add onclick="window.open('Files/cal.pdf','_blank')" to the line above and remove disabled class -->
+						<button type="button" id="blog" class="newsButtons rounded disabled">Read the build blog! (Coming soon)</button>
+						<!-- When build blog is released, add onclick="location.href='Pages/blogPost/blog.html'" to the line above and remove disabled class -->
 					</div>
 				</div>
 				<div id="slides-container">
@@ -73,6 +83,7 @@
 				</div>
 			</div>
 
+			<!-- EXTERNAL NEWS ########################################-->
       <div id="externalNews">
 				<div id="rssFeed">
         <h1 class="sectionTitles">Other Robotics News!</h1>
@@ -80,6 +91,7 @@
 				</div>
       </div> 
 
+			<!-- SPONSORS ########################################-->
 			<div id="sponsors">
         <div id="sponsorInfo" class="rounded">
 					<h1 class="sectionTitles">Thank you to our 2020 sponsors!</h1>
@@ -120,6 +132,8 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- CONTACT ########################################-->
 			<div id="contact">
 				<div id="contactContent">
 					<h1 class="sectionTitles"> Contact Us</h1>
@@ -128,12 +142,14 @@
 						<div id="contactContainer">
 							<!-- https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link -->
 							<button onclick=" window.open('https://www.chiefdelphi.com/','_blank')" 	type="button" id="discussion" class="contactButtons rounded">Join the 	discussion</button>
-							<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link','_blank')" 	type="button" id="discussion" class="contactButtons rounded">Do you want to join the club?</button>
+							<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfBtnBe92Y_NIFXODOuqEao3xzNIFigf_Q8IIrsw1BoU9K3Dg/viewform?usp=sf_link','_blank')" 	type="button" id="discussion" class="contactButtons rounded">Join our team</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- FOOTER ########################################-->
     <div id="footer">
  		 <h6 class="footerText">BC Robotics © 2021 All Rights Reserved.</h6>
 		</div>

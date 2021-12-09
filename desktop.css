@@ -1,5 +1,10 @@
 /* YELLOW: #FED548 */
 /* BLUE: #0C88AE */
+
+
+/* Global styles ########################################*/
+
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -23,8 +28,15 @@
 	display: flex;
 }
 
+
+/* Navbar styles ########################################*/
+
+
 #mammothLogo{
-	height:100%
+	height:80%;
+	padding: 5px;
+	padding-left: 10px;
+	margin-right: auto;
 }
 
 #topbar{
@@ -37,7 +49,6 @@
   position: fixed;
 }
 
-/* this */
 #navbar{
 	display: flex;
 	/* display: none; */
@@ -51,15 +62,11 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#hamburgerMenuList{
-	list-style-type: none;
-	padding-right: 1vw;
-}
 .hamburgerMenuLink{
 	display: block;
   padding: 8px;
-	height: 4vh;
 	align-content: center;
+	justify-content: center;
   color: whitesmoke;
 	text-decoration: none;
 	font-size: 32px;	/* merged from hamburgerMenuItem class */
@@ -71,7 +78,7 @@
 
 #hamburgerMenuIcon1 {
  height: 6vh;
- z-index: 5;
+ z-index: 10;
  margin-top: auto;
  margin-bottom: auto;
  margin-left: auto;
@@ -81,14 +88,16 @@
 
 #hamburgerMenuIcon {
  height: 6vh;
- z-index: 5;
  margin-top: auto;
  margin-bottom: auto;
  margin-left: auto;
  margin-right: 1.5vw;
  cursor: pointer;
- min-width: 50px;
 }
+
+
+/* Hamburger menu styles ########################################*/
+
 
 #hamburgerMenuContainer {
 	position: fixed;
@@ -105,10 +114,8 @@
 	background-color: rgba(55,55,55, 0.80);
 }
 
-.hamMenuItem{
-	padding-top: 5px;
-	padding-bottom
-}
+
+/* Header styles ########################################*/
 
 
 #header{
@@ -123,15 +130,6 @@
 	/* align-self: center; */
 }
 
-/* removed in html */
-/* #arrowdown {
-	display: block;
-	position: fixed;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-  width: 60px;
-} */
 
 #hContent{
 	display: flex;
@@ -175,6 +173,10 @@
 	color: lightgray;
 	cursor: pointer;
 }
+
+
+/* News styles ########################################*/
+
 
 #newsDiv{
 	background-color: #111111;
@@ -226,6 +228,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+	transition: background-image 0.5s ease;
 }
 
 .newsText {
@@ -233,14 +236,12 @@
   font-size: 15px;
   position: absolute;
 	display: block;
-	top: 0px;
-	margin-left: 67%;
-  width: 33%;
-	height:  100%;
-	max-height: 1000px;
+  width: 100%;
+	height:	10%;
+	top: 90%;
   text-align: center;
-	padding-bottom: auto;
 	background-color: rgba(55,55,55, 0.80);
+	justify-content: center;
 	
 }
 
@@ -256,21 +257,20 @@
 }
 
 #ssTitle {
-	font: 1em arial;
-	display: block;
+	font: 100% arial;
+	display: flex;
 	position: relative;
-	font-size: 2vw;
-	margin-top: 2%;
-	margin-bottom: 4%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
+	font-size: 3vh;
+  justify-content: center;
+  align-items: center;
+	height: 6.6vh;
+	width: 100%;
 	text-align: center;
 }
 
-#ssText {
+#ssText {				//Depricated
 	font: 1em arial;
-	display: block;
+	//display: block;
 	position: relative;
 	font-size: 1vw;
 	margin: auto;
@@ -281,13 +281,20 @@
 	text-align: left;
 	overflow: hidden;
 	text-overflow: ellipsis;
-
+	display: none;
 }
 
 #dotContainer{
-	display: inline-block;
-	position:relative;
-	top: 90%;
+	background-color: rgba(55,55,55, 0.80);
+	border-radius: 25px;
+  font-size: 12px;
+  padding: 7px 12px;
+	width: 81px;
+  position: relative;
+	top: 5px;
+	margin-right: 5px;
+	margin-left: auto;
+	justify-content: space-between;
 }
 
 .dot {
@@ -323,9 +330,9 @@
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+
+/* External news styles ########################################*/
+
 
 #externalNews{
 	display: flex;
@@ -373,9 +380,13 @@
 	margin-bottom: 3vh;
 }
 
-container{
+container{				/* Is this used? */
 	width: 20vw;
 }
+
+
+/* Sponsor styles ########################################*/
+
 
 #ranks{
 	display: flex;
@@ -407,6 +418,10 @@ container{
 .sponsorImg{
 	width: 80%;
 }
+
+
+/* Contact styles ########################################*/
+
 
 #contact{
 	widows: 100%;
@@ -440,6 +455,7 @@ container{
 
 }
 
+/* Are any of these three used? */
 #socialList{
 	list-style-type: none;
 }
@@ -453,6 +469,9 @@ container{
 }
 
 
+/* Footer styles ########################################*/
+
+
 #footer {
 	display: flex;
 	align-items: center;
@@ -464,4 +483,16 @@ container{
 
 .footerText{
 	color: #707070;
+}
+
+
+/* Temporary styles ########################################*/
+
+
+.disabled{
+	cursor:default;
+}
+
+#blogburg:hover{
+	background-color: rgba(55, 55, 55, 0.0);
 }

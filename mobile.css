@@ -1,5 +1,10 @@
 /* YELLOW: #FED548 */
 /* BLUE: #0C88AE */
+
+
+/* Global styles ########################################*/
+
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -24,18 +29,14 @@
 	display: flex;
 }
 
+
+/* Navbar styles ########################################*/
+
+
 #mammothLogo{
-	height:100%
+	height:80%;
+	padding: 5px;
 }
-
-/* removed in html
-#arrowdown {
-	display: flex;
-	align-items: center;
-  width: 60px;
-
-} */
-
 
 #topbar{
 	display: flex;
@@ -47,7 +48,6 @@
   position: fixed;
 }
 
-/* this */
 #navbar{
 	display: flex;
 	/* display: none; */
@@ -61,15 +61,10 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#hamburgerMenuList{
-	list-style-type: none;
-	padding-right: 1vw;
-}
 .hamburgerMenuLink{
 	display: block;
 	text-align: center;
-  padding: 8px;
-	height: 4vh;
+  padding: 10px;
 	align-content: center;
   color: whitesmoke;
 	text-decoration: none;
@@ -100,6 +95,10 @@
  cursor: pointer;
 }
 
+
+/* Hamburger menu styles ########################################*/
+
+
 #hamburgerMenuContainer {
 	position: fixed;
 	display: inherit;
@@ -115,6 +114,10 @@
 	background-color: rgba(55,55,55, 0.80);
 }
 
+
+/* Header styles ########################################*/
+
+
 #header{
 	background-image: url('/Images/4504RobotBackground.png');
 	background-color: #000000;
@@ -128,23 +131,12 @@
 	align-items: center;
 }
 
-#arrowdown {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-  width: 60px;
-
-}
-
 #hContent{
 	text-align: center;
 }
 
-
-
 #slogan{
 	margin: 15vw;
-	/* width:  */
 	color: lightgray;
 }
 
@@ -176,6 +168,10 @@
 	cursor: pointer;
 }
 
+
+/* News styles ########################################*/
+
+
 #newsDiv{
 	background-color: #111111;
 	display: flex;
@@ -187,10 +183,6 @@
 #news{
 	align-content: center;
 	text-align: center;
-	/* padding-left: 5vw;
-	padding-right: 5vw;
-	padding-top: 0px;
-	padding-bottom: 0px; */
 }
 
 #newsTitle{
@@ -210,24 +202,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 5vw;
-}
-
-/* .newsButtons{
-	background-color: #333333;
-	width: 35vw;
-	height: 30vw;
-	cursor: pointer;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  margin: 5%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 4vw;
 }
- */
 
 #slides-container {
  	background-image: url("Images/photos/robo.jpg");
@@ -238,23 +214,8 @@
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
+	transition: background-image 0.5s ease;
 }
-
-/* original from desktop
-
-#slides-container {
- 	background-image: url("Images/photos/robo.jpg");
- 	height: 66vh;
- 	width: 50vw;
- 	background-size: cover;
- 	background-position: center;
-  background-repeat: no-repeat;
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
- */
-
 
 .newsText {
   color: #f2f2f2;
@@ -262,9 +223,9 @@
   position: absolute;
 	display: block;
   width: 100%;
-	top: 50%;
-	height: 50%;
-  text-align: center;
+	top: 75%;
+	height: 25%;
+  align-content: center;
 	background-color: rgba(55,55,55, 0.80);
 	
 }
@@ -286,15 +247,14 @@
 }
 
 #ssTitle {
-	font: 1em arial;
-	display: block;
+	font: 100% arial;
+	display: flex;
 	position: relative;
-	font-size: 7.5vw;
-	margin-top: 2%;
-	margin-bottom: 4%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
+	font-size: 4vh;
+  justify-content: center;
+  align-items: center;
+	height: 15vh;
+	width: 100%;
 	text-align: center;
 }
 
@@ -311,7 +271,7 @@
 	text-align: left;
 	overflow: hidden;
 	text-overflow: ellipsis;
-
+	display: none;
 }
 
 #dotContainer{
@@ -326,14 +286,6 @@
 	margin-left: auto;
 	justify-content: space-between;
 }
-
-/*
-#dotContainer{
-	display: inline-block;
-	position:relative;
-	top: 90%;
-}
-*/
 
 .dot {
   cursor: pointer;
@@ -371,6 +323,10 @@
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+/* External news styles ########################################*/
+
 
 #externalNews{
 	display: flex;
@@ -422,6 +378,10 @@ container{
 	width: 20vw;
 }
 
+
+/* Sponsors styles ########################################*/
+
+
 #ranks{
 	display: flex;
 	justify-content: center;
@@ -455,6 +415,10 @@ container{
 .sponsorImg{
 	width: 80%;
 }
+
+
+/* Contact styles ########################################*/
+
 
 #contact{
 	display: flex;
@@ -506,6 +470,9 @@ container{
 }
 
 
+/* Footer styles ########################################*/
+
+
 #footer {
 	display: flex;
 	align-items: center;
@@ -517,4 +484,16 @@ container{
 
 .footerText{
 	color: #707070;
+}
+
+
+/* Temporary styles ########################################*/
+
+
+.disabled{
+	cursor:default;
+}
+
+#blogburg:hover{
+	background-color: rgba(55,55,55, 0.0);
 }
